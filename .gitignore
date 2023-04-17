@@ -12,4 +12,5 @@
 *.fdb_latexmk
 *.fls
 *-oldtmp-*.tex
+*.cut
 out/

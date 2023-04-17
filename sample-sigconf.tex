@@ -35,6 +35,8 @@
 %%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
 %% NOTE that a single column version may be required for 
 %% submission and peer review. This can be done by changing
 %% the \doucmentclass[...]{acmart} in this template to 
@@ -645,7 +647,7 @@ figure in your article, place the command immediately before the
 \verb|\maketitle| command:
 \begin{verbatim}
   \begin{teaserfigure}
-    \includegraphics[width=\textwidth]{sampleteaser}
+    \includegraphics[width=\textwidth]{sampleteaser.pdf}
     \caption{figure caption}
     \Description{figure description}
   \end{teaserfigure}

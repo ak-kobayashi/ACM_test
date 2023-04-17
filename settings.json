@@ -1,0 +1,166 @@
+{
+    "files.autoGuessEncoding": true,
+    "remote.SSH.showLoginTerminal": true,
+    "terminal.integrated.inheritEnv": false,
+
+    // Path Intellisence を使うためにデフォルトのPath補完を殺す
+    //"typescript.suggest.paths": false,
+    //"javascript.suggest.paths": false,
+    //"path-intellisense.absolutePathToWorkspace": true,
+
+    // ---------- Language ----------
+
+    "[tex]": {
+        // スニペット補完中にも補完を使えるようにする
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+
+    "[latex]": {
+        // スニペット補完中にも補完を使えるようにする
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+
+    "[bibtex]": {
+        // インデント幅を2にする
+        "editor.tabSize": 2
+    },
+
+
+    // ---------- LaTeX Workshop ----------
+
+    // 使用パッケージのコマンドや環境の補完を有効にする
+    "latex-workshop.intellisense.package.enabled": true,
+
+    // 生成ファイルを削除するときに対象とするファイル
+    // デフォルト値に "*.synctex.gz" を追加
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+
+    // 生成ファイルを "out" ディレクトリに吐き出す
+    "latex-workshop.latex.outDir": "out",
+
+    // ビルドのレシピ
+    "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "-outdir=%OUTDIR%",
+                "-pdf",
+                "%DOC%"
+            ],
+        },
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "cSpell.userWords": [
+        "astype",
+        "Choropleth",
+        "Darray",
+        "dataset",
+        "dtype",
+        "dtypes",
+        "geopandas",
+        "hstack",
+        "jismesh",
+        "lightgbm",
+        "logits",
+        "matplotlib",
+        "meshpoint",
+        "pyplot",
+        "pyproj",
+        "quantile",
+        "retargeting",
+        "scaleout",
+        "scdv",
+        "scipy",
+        "sklearn",
+        "Softmax",
+        "supership",
+        "yoshioka",
+        "zenrin"
+    ],
+    "editor.minimap.enabled": false,
+    "remote.SSH.remotePlatform": {
+        "ss-aws": "linux",
+        "dm-koba": "linux",
+        "aries-docker-ak": "linux",
+        "tf_gpu_koba": "linux",
+        "tf_gpu_cluster": "linux",
+        "gpu_cluster_gw": "linux",
+        "172.19.82.207": "linux",
+        "aries_lcm": "linux",
+        "172.19.75.36": "linux",
+        "selenium": "linux",
+        "aries_loc_embed": "linux",
+        "192.168.0.12": "linux",
+        "gemini": "linux",
+        "gdx_koba": "linux",
+        "cancer": "linux",
+        "cancer-dm_koba": "linux"
+    },
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "C_Cpp.updateChannel": "Insiders",
+    "window.restoreWindows": "none",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "jupyter.askForKernelRestart": false,
+    "cmake.configureOnOpen": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "security.workspace.trust.enabled": false,
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": [
+        "~/.local/lib/python/site-packages/"
+    ],
+    "docker.environment": {
+        "DOCKER_HOST": "ssh://gatefield@172.19.75.36"
+    },
+}
