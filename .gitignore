@@ -13,4 +13,5 @@
 *.fls
 *-oldtmp-*.tex
 *.cut
+diff/
 out/
